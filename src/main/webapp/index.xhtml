@@ -1,0 +1,74 @@
+<ui:composition template="WEB-INF/template/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+	xmlns:o="http://omnifaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions"
+	xmlns:p="http://primefaces.org/ui">
+
+	<ui:define name="title">Expedia Assignment - Mazen H. Khalil</ui:define>
+	<ui:define name="content">
+		<h:form>
+			<h:panelGrid columns="2">
+				<p:outputLabel for="destinationName" value="Destination Name: " />
+				<p:inputText id="destinationName" value="#{viewMB.destinationName}" />
+
+				<p:outputLabel for="destinationCity" value="Destination City: " />
+				<p:inputText id="destinationCity" value="#{viewMB.destinationCity}" />
+
+				<p:outputLabel for="regionIds" value="Region Ids: " />
+				<p:inputText id="regionIds" value="#{viewMB.regionIds}" />
+
+
+				<p:outputLabel for="minTripStartDate" value="Min Trip Start Date: " />
+				<p:calendar id="minTripStartDate" value="#{viewMB.minTripStartDate}"
+					pattern="yyyy-mm-dd" mask="true" />
+
+
+				<p:outputLabel for="maxTripStartDate" value="Max Trip Start Date: " />
+				<p:calendar id="maxTripStartDate" value="#{viewMB.maxTripStartDate}"
+					pattern="yyyy-mm-dd" mask="true" />
+
+				<p:outputLabel for="lengthOfStay" value="length of Stay: " />
+				<p:inputText id="lengthOfStay" value="#{viewMB.lengthOfStay}" />
+
+				<h:outputText for="minStarRating" value="Min Star Rating: " />
+				<p:rating id="minStarRating" value="#{viewMB.minStarRating}" />
+
+				<h:outputText for="maxStarRating" value="Max Star Rating: " />
+				<p:rating id="maxStarRating" value="#{viewMB.maxStarRating}" />
+
+				<h:outputText for="minTotalRate" value="Min Total Rate: " />
+				<p:rating id="minTotalRate" value="#{viewMB.minTotalRate}" />
+
+				<h:outputText for="maxTotalRate" value="Max Total Rate: " />
+				<p:rating id="maxTotalRate" value="#{viewMB.maxTotalRate}" />
+
+				<h:outputText for="minGuestRating" value="Min Guest Rating: " />
+				<p:rating id="minGuestRating" value="#{viewMB.minGuestRating}" />
+
+				<h:outputText for="maxGuestRating" value="Max Guest Rating " />
+				<p:rating id="maxGuestRating" value="#{viewMB.maxGuestRating}" />
+
+				<p:commandButton value="Filter" update="hotels"
+					action="#{viewMB.search}"></p:commandButton>
+			</h:panelGrid>
+
+
+			<p:dataTable id="hotels" value="#{viewMB.result.offers.hotels}"
+				var="hotel">
+				<p:column headerText="Image">
+					<h:graphicImage value="#{hotel.hotelInfo.hotelImageUrl}" />
+				</p:column>
+
+				<p:column headerText="Hotel Name">
+					<h:outputText value="#{hotel.hotelInfo.hotelName}"></h:outputText>
+				</p:column>
+
+
+			</p:dataTable>
+		</h:form>
+	</ui:define>
+</ui:composition>
