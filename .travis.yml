@@ -1,8 +1,8 @@
 language: java
 jdk:
   - oraclejdk8
-script: mvn clean verify
 deploy:
   provider: heroku
   api_key:
     secure: "f9d545cb-9ea7-4182-824f-526c0ae98a55"
+  app: expediaassignment
