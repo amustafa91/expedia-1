@@ -6,17 +6,21 @@ import java.util.List;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * 
+ * @author Mazen H. Khalil
+ */
 @XmlRootElement(name = "offer")
 public class Offers {
 
-	@XmlElement(name = "Hotel")
-	private List<Hotel> hotels = new ArrayList<>();
+    @XmlElement(name = "Hotel")
+    private List<Hotel> hotels = new ArrayList<>();
 
-	public List<Hotel> getHotels() {
-		return hotels;
-	}
+    public List<Hotel> getHotels() {
+	return hotels;
+    }
 
-	public void setHotels(List<Hotel> hotels) {
-		this.hotels = hotels;
-	}
+    public void setHotels(List<Hotel> hotels) {
+	this.hotels = hotels;
+    }
 }

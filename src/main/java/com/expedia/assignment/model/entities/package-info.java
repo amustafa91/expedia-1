@@ -1,7 +1,6 @@
-
 /**
- * @author Mazen
- *
+ * 
+ * @author Mazen H. Khalil
  */
 @javax.xml.bind.annotation.XmlAccessorType(XmlAccessType.NONE)
 package com.expedia.assignment.model.entities;

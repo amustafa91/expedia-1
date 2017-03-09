@@ -3,83 +3,87 @@ package com.expedia.assignment.model.entities;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * 
+ * @author Mazen H. Khalil
+ */
 @XmlRootElement(name = "Hotel")
 public class Hotel {
 
-	@XmlElement(name = "offerDateRange")
-	private OfferDateRange offerDateRange;
+    @XmlElement(name = "offerDateRange")
+    private OfferDateRange offerDateRange;
 
-	@XmlElement(name = "destination")
-	private Destination destination;
+    @XmlElement(name = "destination")
+    private Destination destination;
 
-	@XmlElement(name = "hotelInfo")
-	private HotelInfo hotelInfo;
-	
-	@XmlElement(name = "hotelUrgencyInfo")
-	private HotelUrgencyInfo hotelUrgencyInfo;
-	
-	@XmlElement(name = "hotelPricingInfo")
-	private HotelPricingInfo hotelPricingInfo;
-	
-	@XmlElement(name = "hotelUrls")
-	private HotelUrls hotelUrls;
-	
-	@XmlElement(name = "hotelScores")
-	private HotelScores hotelScores;
+    @XmlElement(name = "hotelInfo")
+    private HotelInfo hotelInfo;
 
-	public OfferDateRange getOfferDateRange() {
-		return offerDateRange;
-	}
+    @XmlElement(name = "hotelUrgencyInfo")
+    private HotelUrgencyInfo hotelUrgencyInfo;
 
-	public void setOfferDateRange(OfferDateRange offerDateRange) {
-		this.offerDateRange = offerDateRange;
-	}
+    @XmlElement(name = "hotelPricingInfo")
+    private HotelPricingInfo hotelPricingInfo;
 
-	public Destination getDestination() {
-		return destination;
-	}
+    @XmlElement(name = "hotelUrls")
+    private HotelUrls hotelUrls;
 
-	public void setDestination(Destination destination) {
-		this.destination = destination;
-	}
+    @XmlElement(name = "hotelScores")
+    private HotelScores hotelScores;
 
-	public HotelInfo getHotelInfo() {
-		return hotelInfo;
-	}
+    public OfferDateRange getOfferDateRange() {
+	return offerDateRange;
+    }
 
-	public void setHotelInfo(HotelInfo hotelInfo) {
-		this.hotelInfo = hotelInfo;
-	}
+    public void setOfferDateRange(OfferDateRange offerDateRange) {
+	this.offerDateRange = offerDateRange;
+    }
 
-	public HotelUrgencyInfo getHotelUrgencyInfo() {
-		return hotelUrgencyInfo;
-	}
+    public Destination getDestination() {
+	return destination;
+    }
 
-	public void setHotelUrgencyInfo(HotelUrgencyInfo hotelUrgencyInfo) {
-		this.hotelUrgencyInfo = hotelUrgencyInfo;
-	}
+    public void setDestination(Destination destination) {
+	this.destination = destination;
+    }
 
-	public HotelPricingInfo getHotelPricingInfo() {
-		return hotelPricingInfo;
-	}
+    public HotelInfo getHotelInfo() {
+	return hotelInfo;
+    }
 
-	public void setHotelPricingInfo(HotelPricingInfo hotelPricingInfo) {
-		this.hotelPricingInfo = hotelPricingInfo;
-	}
+    public void setHotelInfo(HotelInfo hotelInfo) {
+	this.hotelInfo = hotelInfo;
+    }
 
-	public HotelUrls getHotelUrls() {
-		return hotelUrls;
-	}
+    public HotelUrgencyInfo getHotelUrgencyInfo() {
+	return hotelUrgencyInfo;
+    }
 
-	public void setHotelUrls(HotelUrls hotelUrls) {
-		this.hotelUrls = hotelUrls;
-	}
+    public void setHotelUrgencyInfo(HotelUrgencyInfo hotelUrgencyInfo) {
+	this.hotelUrgencyInfo = hotelUrgencyInfo;
+    }
 
-	public HotelScores getHotelScores() {
-		return hotelScores;
-	}
+    public HotelPricingInfo getHotelPricingInfo() {
+	return hotelPricingInfo;
+    }
 
-	public void setHotelScores(HotelScores hotelScores) {
-		this.hotelScores = hotelScores;
-	}
+    public void setHotelPricingInfo(HotelPricingInfo hotelPricingInfo) {
+	this.hotelPricingInfo = hotelPricingInfo;
+    }
+
+    public HotelUrls getHotelUrls() {
+	return hotelUrls;
+    }
+
+    public void setHotelUrls(HotelUrls hotelUrls) {
+	this.hotelUrls = hotelUrls;
+    }
+
+    public HotelScores getHotelScores() {
+	return hotelScores;
+    }
+
+    public void setHotelScores(HotelScores hotelScores) {
+	this.hotelScores = hotelScores;
+    }
 }
