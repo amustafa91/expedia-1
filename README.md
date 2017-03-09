@@ -17,15 +17,15 @@
 **http://HOST:PORT/assignment/faces/index.xhtml**
 
 ##Technology Used
-*JavaEE 7*
-*JAX-RS*
-*JAXB*
-*JSF*
-*Primefaces*
+- *JavaEE 7*
+- *JAX-RS*
+- *JAXB*
+- *JSF*
+- *Primefaces*
 
 ##Notes
-*Travis-CI* is integrated with this project (Continuous Integration)
-*Heroku* is integrated with Travis-CI (Continuous Deployment)
+- *Travis-CI* is integrated with this project (Continuous Integration)
+- *Heroku* is integrated with Travis-CI (Continuous Deployment)
 **https://expediaassignment.herokuapp.com**
 
 ##Assumptions
@@ -34,9 +34,9 @@
 
 ##Known Issues
 - The following query parameters accept double value, but due to the used rating component only (1.0, 2.0, 3.0, 4.0 and 5.0) are sent.
-*minStarRating*
-*maxStarRating*
-*minGuestRating*
-*maxGuestRating*
+	- *minStarRating*
+	- *maxStarRating*
+	- *minGuestRating*
+	- *maxGuestRating*
 - SCHEMA, HOST, PORT and RESOURCE are hard coded on *HotelFinder* class
 - Junit tests have not been written
