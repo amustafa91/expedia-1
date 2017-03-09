@@ -36,10 +36,10 @@
 						<p:rating id="maxStarRating" value="#{viewMB.filter.maxStarRating}" />
 
 						<h:outputText for="minTotalRate" value="Min Total Rate: " />
-						<p:rating id="minTotalRate" value="#{viewMB.filter.minTotalRate}" />
+						<p:inputText id="minTotalRate" value="#{viewMB.filter.minTotalRate}" />
 
 						<h:outputText for="maxTotalRate" value="Max Total Rate: " />
-						<p:rating id="maxTotalRate" value="#{viewMB.filter.maxTotalRate}" />
+						<p:inputText id="maxTotalRate" value="#{viewMB.filter.maxTotalRate}" />
 
 						<h:outputText for="minGuestRating" value="Min Guest Rating: " />
 						<p:rating id="minGuestRating" value="#{viewMB.filter.minGuestRating}" />
@@ -78,6 +78,10 @@
 				<p:column headerText="Average Price" sortBy="#{hotel.hotelPricingInfo.averagePriceValue}">
 					<h:outputText value="#{hotel.hotelPricingInfo.averagePriceValue} #{hotel.hotelPricingInfo.currency}" />
 					<h:outputText value=" (Saving #{hotel.hotelPricingInfo.percentSavings}%)"></h:outputText>
+				</p:column>
+
+				<p:column headerText="Guest Review Rating" sortBy="#{hotel.hotelInfo.hotelGuestReviewRating}">
+					<h:outputText value="#{hotel.hotelInfo.hotelGuestReviewRating}" />
 				</p:column>
 			</p:dataTable>
 
